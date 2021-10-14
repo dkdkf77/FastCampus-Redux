@@ -70,6 +70,17 @@
   - ### 인자로 들어오는 previousState 와 리턴되는 newState는 다른 참조를 가지도록 해야 함 
 
 
+## 현재 상황  
+
+action -> actionCreator -> Reducers -> Store -> console.log -> 초기값으로 설정해준 [] 값이 나옴 -> dispatch(action) ->
+-> 리듀서로 가고 -> 스토어에서 바뀐 값으로 처리 후  -> console.log -> 바꾸려는 액션 값이 나온다 -> 구독 subscribe -> unsubscribe
+
+store.getState() => 현재의 스토어의 스테이츠를 가져옴
+dispatch => 액션 인자를 넣어서 스토어의 상태를 변경 시킴 
+subscribe => 스토어에 변경 사항이 있을때 서버 () => {}  이러한 함수를 실행 시킴
+unsbscibe => 하면 제거 
+
+
 
 
 
